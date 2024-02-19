@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import div from "next/link";
+import { getUniversity } from "@/lib/getInfo";
 
 export default function Request() {
   const [request, setRequest] = useState([]);
@@ -18,23 +19,7 @@ export default function Request() {
   const downloadResume = (resumeUrl) => {
     window.open(resumeUrl, "_blank");
   };
-
-  const getUniversity = (id) => {
-    let response = "";
-    switch (id) {
-      case 1:
-        response = "IITU";
-        break;
-      case 2:
-        response = "Narxoz";
-        break;
-      default:
-        response = "Unknown";
-        break;
-    }
-    return response;
-  };
-
+  
   const filtration = request.filter((f) => f.status == 'accepted')
 
   return (
