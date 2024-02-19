@@ -44,6 +44,7 @@ export default function Request() {
 
   return (
     <Layout>
+      <h2>Непроверенные запросы</h2>
       <table className="basic mt-2">
         <thead>
           <tr>
@@ -73,10 +74,10 @@ export default function Request() {
                 <span className="cursor-pointer underline">Скачать резюме</span>
               </td>
               <td>
-                <div className="btn-default" onClick={() => accepted(item.id)}>
+                <div className="btn-default mb-2 cursor-pointer" onClick={() => accepted(item.id)}>
                   Принять
                 </div>
-                <div className="btn-red" onClick={() => rejected(item.id)}>
+                <div className="btn-red cursor-pointer" onClick={() => rejected(item.id)}>
                   Отклонить
                 </div>
               </td>

@@ -24,6 +24,7 @@ export default function Request() {
 
   return (
     <Layout>
+      <h2>Список тех кто идей нахуй</h2>
       <table className="basic mt-2">
         <thead>
           <tr>
