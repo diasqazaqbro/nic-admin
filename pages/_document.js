@@ -4,7 +4,7 @@ export default function Document() {
 	return (
 		<Html lang='en'>
 			<Head>
-				<title>Админская панель Hudos</title>
+				<title>Админская панель NIC</title>
 			</Head>
 			<body>
 				<Main />
